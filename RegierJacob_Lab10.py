@@ -31,3 +31,13 @@ plt.ylabel("a(x, 0)")
 plt.title("Initial Wavepacket")
 plt.show()
 
+
+def compute_spectral_radius(matrix):
+    eigenvalues = np.linalg.eigvals(matrix)
+    return np.max(np.abs(eigenvalues))
+
+test_matrix = create_tridiagonal_matrix(5, -2, 4, 1.5)
+radius = compute_spectral_radius(test_matrix)
+print("Spectral Radius:", radius)
+
+
