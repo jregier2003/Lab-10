@@ -24,3 +24,10 @@ x_grid = np.linspace(-L / 2, L / 2, n_space)
 sigma_val = 0.2
 k_val = 35
 wavepacket = initialize_wavepacket(sigma_val, k_val, x_grid)
+
+plt.plot(x_grid, wavepacket)
+plt.xlabel("x")
+plt.ylabel("a(x, 0)")
+plt.title("Initial Wavepacket")
+plt.show()
+
