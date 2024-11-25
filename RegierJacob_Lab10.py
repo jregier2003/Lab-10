@@ -41,3 +41,7 @@ radius = compute_spectral_radius(test_matrix)
 print("Spectral Radius:", radius)
 
 
+n = 10
+matrix = create_tridiagonal_matrix(n, -1, 2, -1)
+radius = compute_spectral_radius(matrix)
+print(f"Spectral Radius of a {n}x{n} matrix:", radius)
