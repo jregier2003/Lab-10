@@ -12,3 +12,5 @@ def create_tridiagonal_matrix(size, below_diag, diag, above_diag):
 size = 5
 A = create_tridiagonal_matrix(size, below_diag=3, diag=1, above_diag=5)
 
+matrix_test = create_tridiagonal_matrix(5, -2, 4, 1.5)
+print("Generated Matrix:\n", matrix_test)
